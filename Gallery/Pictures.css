@@ -1,0 +1,246 @@
+body {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	background-color:#81d1ff;	
+	color:#000000;
+}
+
+/*Logo on top*/
+#logo{
+	left: 30%;
+}
+
+/* Site name next to the logo */
+#name{
+	position: relative;
+	top: -20px;
+	margin:20px;
+	font-size: 50px;
+	font-family: Times New Roman;
+}
+
+#name, #name:link, #name:visited {
+	color: black; 
+	text-decoration: none;
+}
+
+
+/* Side images */
+.left-image{
+    left: 0;
+	background-position: center left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-image: url(../left.jpg);
+}
+
+.right-image{
+    right: 0;
+	background-position: center right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-image: url(../right.jpg);
+}
+
+/* Methods to disable the right and left image when the screen is too small */
+@media screen and (max-width: 1800px) {
+	.right-image{
+		display: none;
+	}
+}
+  
+@media screen and (max-width: 1890px) {
+	.left-image{
+		display: none;
+	}
+}
+
+
+/* Top menu things size */
+#TEXT{
+	font-size:30px;
+}
+
+.links{
+	font: Georgia;
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.links { 
+		font-size: 30px;
+		margin-top: 25px;	
+	}
+}
+
+/* keeps the menu things white. from whenever you accesed them from */
+#About, #About:link, #About:visited {
+	color: white; 
+}
+
+#About{
+	margin: 10px;
+}
+
+#Projects, #Projects:link, #Projects:visited {
+	color: white; 
+}
+
+#Projects{
+	margin: 10px;
+}
+
+#Extra, #Extra:link, #Extra:visited {
+	color: white; 
+}
+
+#Extra{
+	margin: 10px;
+}
+
+#MusicPlayingGame, #MusicPlayingGame:link, #MusicPlayingGame:visited {
+	color: white; 
+}
+
+#MusicPlayingGame{
+	margin: 10px;
+}
+
+/* Big picture */
+#picture{
+	margin-top:5%;
+	max-width:100%;
+	border: 3px solid #ff9ed2;
+}
+
+/* For the pictures in the bottom of the selected gallery pages */
+#MoreGalleryImage{
+	max-width: 24%;
+	margin-top: 2%;
+	margin-right: 1%;
+	float:left;
+}
+
+/* I even highlight them on hover */
+#MoreGalleryImage:hover {
+	opacity: 0.7;
+}
+
+/* Title */
+#title{
+	margin-top:20px;
+	font-size:50px;
+}
+
+#desc{
+	margin-top:10px;
+	font-size:20px;
+	text-align: justify;
+}
+
+/* Modal stuff for zoom in and out and get on top of the page */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+/* This repeats for every keyframe */
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* This is the close picture button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* change size of the zoomed in picture after screen size is less than 700px */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Bottom watermark text */
+.CreatorText {
+	color: rgb(255, 255, 255);
+	/* Multiple shadowing to make it more visible to the bare eye */
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	user-select: none;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	z-index: 39;
+}
+
+/* Found this cool animation trick from here:
+https://www.30secondsofcode.org/css/s/hover-underline-animation
+kudos to them for the animation code.
+*/
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #f352ab;
+}
+
+.hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #f352ab;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}

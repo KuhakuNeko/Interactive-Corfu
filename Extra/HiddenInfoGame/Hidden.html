@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- my JavaScript file! -->
+	<script src="HiddenScript.js" defer></script>
+	<!-- my css file! -->
+	<link rel="stylesheet" href="HiddenStyle.css">
+
+	<!-- My page title! -->
+	<title>You Almost Found It!</title>
+  </head>
+<body>
+<div>
+    <img id="pg" src="ImgHidden.jpg" width="1280" height="720">
+    <!-- I made a small sized canvas! A canvas is what the word says... Its for drawing. -->
+    <canvas id="cv" width="1280" height="720"></canvas>
+
+    <p class="text" >
+        Ξεσκόνισε με το ποντίκι για να βρεις το κρυφό στοιχείο και την εικόνα που φύλαξε η ΙΑ!<br>
+        Όταν έχεις ξεσκονίσει/αποκαλύψει αρκετό μέρος της εικόνας θα σου εμφανιστεί ανάλογο μήνυμα.<br><br>
+        Πάτα το παρακάτω κουμπί για να επιστρέψεις στην σελίδα με τα έξτρα ή απλώς πήγαινε στην ήδη ανοικτή καρτέλα με το διαδραστικό βίντεο.
+    </p>
+
+
+    <a  href="Interactive-Corfu-IA-Card-Postal.jpg" target="_blank" download="Interactive-Corfu-IA-Card-Postal.jpg" title="Interactive-Corfu-IA-Card-Postal">
+      <button  class="button" id="DownloadImgBtn" style="background-color: rgb(255, 122, 248); float: left; display: none;">Κατέβαστε την εικόνα!</button>
+    </a>
+  
+    <button class="button" onclick="RedirectToExtra()" class="ReturnButton ReturnHomeBtn" id="ReturnHomeBtn" style="background-color: rgb(75, 204, 255);">Επιστροφή στα Extras</button>
+
+</div>

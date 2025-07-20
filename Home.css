@@ -1,0 +1,241 @@
+* {  
+	box-sizing: border-box;
+  }
+
+body {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	background-color:#81d1ff;	
+	color:#000000;
+}
+
+/* Site name next to the logo */
+#name{
+	position: relative;
+	top: -20px;
+	margin:20px;
+	font-size: 50px;
+	font-family: Times New Roman;
+}
+
+#name, #name:link, #name:visited {
+	color: black; 
+	text-decoration: none;
+}
+
+/* Side images */
+.left-image{
+    left: 0;
+	background-position: center left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-image: url(left.jpg);
+}
+
+.right-image{
+    right: 0;
+	background-position: center right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-image: url(right.jpg);
+}
+
+/* Methods to disable the right and left image when the screen is too small */
+@media screen and (max-width: 1800px) {
+	.right-image{
+		display: none;
+	}
+}
+  
+@media screen and (max-width: 1890px) {
+	.left-image{
+		display: none;
+	}
+}
+
+.YTVideo{
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+}
+
+iframe{
+	width:1280px;
+	height:720px;
+}
+  /* This is a a rule i made so that the site looks slick all the time in every device. */
+@media only screen and (max-width: 500px) {
+	.YTVideo {
+	  align-items: center;
+	  justify-content: center;
+	  width: 100%;
+	  height: 100%;
+	}
+}
+
+/* Top menu things size */
+#TEXT{
+	font-size:30px;
+}
+
+/* Welcome text and animation for it as it appears only when you come to the page for the first seconds*/
+.WelcomeTEXT{
+	font-size:80px;
+	margin: 8%;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	-webkit-animation: Fade 4s;
+	animation: Fade 4s;
+}
+
+/* From 100% opacity to 0% even though i choose fadeIn i reversed them to be fade out */
+@keyframes Fade {
+	100% {opacity:0;}
+	0% {opacity:1;}
+}
+
+
+@media screen and (max-width: 1000px) {
+	.WelcomeTEXT{
+		margin: 15%;
+	}
+}
+
+#SubTEXT {
+	font-size:32px;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.BasicTEXT{
+	font-size:21px;
+	text-align: left;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.links{
+	font: Georgia;
+	text-align: center;	
+}
+
+@media screen and (max-width: 1000px) {
+	.links { 
+		font-size: 30px;
+		margin-top: 25px;
+	}
+}
+
+/* keeps the menu things white. from whenever you accesed them from */
+#About, #About:link, #About:visited {
+	color: white; 
+}
+
+#About{
+	margin: 10px;
+}
+
+#Extra, #Extra:link, #Extra:visited {
+	color: white; 
+}
+
+#Extra{
+	margin: 10px;
+}
+
+#Gallery, #Gallery:link, #Gallery:visited {
+	color: white; 
+}
+
+#Gallery{
+	margin: 10px;
+}
+
+#MusicPlayingGame, #MusicPlayingGame:link, #MusicPlayingGame:visited {
+	color: white; 
+}
+
+#MusicPlayingGame{
+	margin: 10px;
+}
+
+.ToggleButton {
+	color: black;
+	background-color:#ff90cd;
+	text-align: right;
+	max-height: 55px;
+	padding-right: 2%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-radius: 24px;
+	margin-top: 1%;
+	line-height: 38px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+	.ToggleButton {
+		line-height: 24px;
+	}
+}
+
+.ToggleButton.pressed {
+	color: rgb(255, 255, 255);
+	background-color:#218ae0;
+}
+
+
+/* Bottom watermark text */
+.CreatorText {
+	color: rgb(255, 255, 255);
+	/* Multiple shadowing to make it more visible to the bare eye */
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	user-select: none;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	z-index: 39;
+}
+
+/* Found this cool animation trick from here:
+https://www.30secondsofcode.org/css/s/hover-underline-animation
+kudos to them for the animation code.
+*/
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #f352ab;
+}
+
+.hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #f352ab;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}

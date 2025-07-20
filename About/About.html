@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap and ajax stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="About.css">
+	<!-- This is the scroll on top button script -->
+	<script src="AboutScriptButton.js" defer></script>
+	<!-- My page icon! -->
+	<link rel = "icon" href = "../Logo.png" type = "image/x-icon">
+	<!-- My page title! -->
+	<title>Interactive Corfu - About</title>
+  </head>
+  <body>
+  <div id="main">
+		
+
+			<div class="container">
+				<div class="row">
+					<!-- Reference to the main page and the logo with the text -->
+					<div>
+						<a href="../index.html"><img id="logo" style="float:left" src="../Logo.png" width="80" height="80"></a>
+						<a href="../index.html" id="name" style="float:left">Interactive Walk at Corfu Island</a>
+					</div>
+					
+					<div class="col-xl-12">
+
+						<!-- The top menu links that remain stay the same -->
+						<div id="TEXT" class="float-left">
+
+							<div class="links">
+								<a class="hover-underline-animation" id="Gallery" href="../Gallery/Gallery.html" style="text-decoration: none;">Gallery</a>
+								<a class="hover-underline-animation" id="MusicPlayingGame" href="../MusicPlayingGame/MusicPlayingGame.html" style="text-decoration: none;">Piano</a>
+								<a class="hover-underline-animation" id="Extra" href="../Extra/Extra.html" style="text-decoration: none;">Extras</a>
+								<a id="About" style="color: gray; user-select: none;">About</a>
+							</div>
+							
+							<!-- The right and left image in case screen gets too big -->
+							<div class="left-image"></div>
+							<div class="right-image"></div>
+
+						</div>
+						
+						<div id="Aboutme" class="Aboutme">
+							<h1>About Dimitris Kostadimas</h1>
+							<!-- English Text
+								<p id="AboutMeTextEnglish">
+									I am a college student currently studying IT at the department of informatics at Ionian university.
+									Apart from my interest in technology i am also a music producer. I love creating content of any kind,
+									either this is music, videos, robots, websites and so on...
+									I am also an active researcher and an enthusiast of everything. You can find me on 
+									<a href="https://www.researchgate.net/profile/Dimitris-Kostadimas" target="_blank" style="text-decoration: none; color: aquamarine;">ResearchGate</a>,
+									on <a href="https://www.youtube.com/channel/UCi-UxDtIti-g2ncq5diH3dQ" target="_blank" style="text-decoration: none; color: crimson;">YouTube</a>,
+									or reach out to me by my academic email which is p19kost2@ionio.gr.<br>
+									<br>
+									Hope you enjoy this creation as well.
+								</p>
+							-->
+							<p id="AboutMeTextGreek" style="text-align: justify; margin-bottom: 20%;">
+								Είμαι φοιτητής του Ιόνιου πανεπιστημίου και σπουδάζω στο τμήμα πληροφορικής.
+								Εκτός από την αγάπη μου για την τεχνολογία και την πληροφορία ασχολούμαι και με την μουσική γράφοντας δικά μου μουσικά κομμάτια, δουλεύοντας και ως μουσικός και ηχολήπτης πέρα από τεχνικός.
+								Μου αρέσει να δημιουργώ περιεχόμενο διάφορων τύπων είτε αυτό είναι μουσική, βίντεο, ρομπότ, ιστοσελίδες ή οτιδήποτε άλλο...
+								Επίσης είμαι ενεργός ερευνητής με ενδιαφέροντα σε πολλούς διαφορετικούς κλάδους. Μπορείτε να με βρείτε στο
+								<a class="hovlink" href="https://www.researchgate.net/profile/Dimitris-Kostadimas" target="_blank" style="text-decoration: underline; color:green;">ResearchGate</a>,
+								στο <a class="hovlink" href="https://github.com/KuhakuNeko" target="_blank" style="text-decoration: underline; color:rgb(0, 0, 0);">GitHub</a>,
+								ή στο <a class="hovlink" href="https://www.youtube.com/channel/UCi-UxDtIti-g2ncq5diH3dQ" target="_blank" style="text-decoration: underline; color: crimson;">YouTube</a> για πράγματα καλλιτεχνικής φύσης.
+								Πέρα απο τις παραπάνω πλατφόρμες μπορείτε να επικοινωνήσετε μαζί μου και μέσω του ακαδημαϊκού μου email που είναι
+								<a class="hovlink" style="text-decoration: underline;" href="mailto: p19kost2@ionio.gr">p19kost2@ionio.gr</a>.<br>
+								<br>
+								Η σελίδα αλλά και το περιεχόμενο αυτής είναι αυθεντικό και ανήκει αποκλειστικά σε εμένα καθώς είμαι ο δημιουργός. Απαγορεύεται η χρήση οποιουδήποτε περιεχομένου της πέρα απο τα κομμάτια του κώδικα της που διαθέτω ως ανοικτά στο github.<br>
+								<br>
+								Ελπίζω να σας άρεσε αυτή η δημιουργία η οποία αποτελεί ακαδημαϊκό project.<br>
+								<br>
+							</p>
+						</div>
+
+						<!-- My picture -->
+						<div class="AboutMePicture">
+							<img id="AboutMePicture" src="DKPicture.jpg" width="360" height="360">
+						</div>
+
+						<div class="fixed-bottom">
+							<!-- Yes "i am" SakuraSoft its my team name / brand -->
+							<div class="CreatorText">
+								Dimitris Kostadimas 2021
+							</div>
+						</div>
+
+						<!-- Added a footer for the scroll on top button to appear on the bottom of the page. -->
+						<footer>
+							<img id="ScrlTopBtn" src="../ReturnOnTopIcon.png" width="50px" style="margin: 1%; margin-left: 2%; opacity: 0.8; position: fixed; bottom: 1%; left: 2%; cursor: pointer;">
+						</footer>
+
+					</div>
+				</div>
+			</div>
+	
+	</div>
+  
+  </body>
+  </html>

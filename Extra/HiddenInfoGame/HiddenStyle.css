@@ -1,0 +1,38 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: rgb(224, 224, 224);
+}
+
+.text {
+	color: black;
+	font-size: 24px;
+}
+
+.button{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-right: 40px;
+	/* This makes my text background round */
+	border-radius:12px;
+	/* This adds spacing between my lines */
+	line-height: 38px;
+	/* This makes the text not selectable to avoid confusion */
+	user-select: none;
+	color: white;
+	font-size: 24px;
+	font-family: Apple Chancery, cursive;
+}
+
+/* This is the canvas css style for the eraser thing */
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	/* Added this transition which bascially smoothly / linearly deletes the opacity */
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+	/* Just changes the cursor to look like crosshair */
+	cursor: crosshair;
+}

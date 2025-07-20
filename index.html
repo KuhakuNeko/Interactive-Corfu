@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap and ajax stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Added ajax for that hide/show thing -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- my css file! -->
+	<link rel="stylesheet" href="Home.css">
+	<!-- my JavaScript file! -->
+	<script src="HomeScript.js" defer></script>
+	<!-- My page icon! -->
+	<link rel = "icon" href = "Logo.png" type = "image/x-icon">
+	<!-- My page title! -->
+	<title>Interactive Walk at Corfu Island</title>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGZYZ9YPVW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-EGZYZ9YPVW');
+	</script>
+	  
+	<!-- Global site tag (gtag.js) - Google Analytics VERNentlify -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2YSE34DE9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-Q2YSE34DE9');
+	</script>
+	
+	<!-- Google Search Console Verification -->
+	<meta name="google-site-verification" content="XNHWZGtLpyL_GlGMd3QOz-jCrQAir71L3NC65Ki1DBg" />
+ </head>
+ <body>
+ <div id="main">
+		
+			<div class="container">
+				<div class="row">
+					<!-- Reference to the main page and the logo with the text -->
+					<div>
+						<a href="index.html"><img id="logo"  style="float:left" src="Logo.png" width="80" height="80"></a>
+						<a href="index.html" id="name" style="float:left">Interactive Walk at Corfu Island</a>
+					</div>
+					
+					<div class="col-xl-12">
+
+						<!-- The top menu links that remain stay the same -->
+						<div id="TEXT" class="float-left">
+
+							<div class="links">
+								<a class="hover-underline-animation" id="Gallery" href="Gallery/Gallery.html" style="text-decoration: none;">Gallery</a>
+								<!-- i added target blank to open this on new page to protect the users from ruining their interactive video experience -->
+								<a class="hover-underline-animation" id="MusicPlayingGame" href="MusicPlayingGame/MusicPlayingGame.html" style="text-decoration: none;" target="_blank">Piano</a>
+								<a class="hover-underline-animation" id="Extra" href="Extra/Extra.html" style="text-decoration: none;">Extras</a>
+								<a class="hover-underline-animation" id="About" href="About/About.html" style="text-decoration: none;">About</a>
+							</div>
+							
+							<!-- The right and left image in case screen gets too big -->
+							<div class="left-image"></div>
+							<div class="right-image"></div>
+
+						</div>
+
+						<div id="WelcomeTEXTID" class="WelcomeTEXT">
+							<p id="title">Καλώς Ορίσατε!</p>
+						</div>
+
+						<div class="BasicTEXT">
+							<p id="SubTEXT">
+							<b>
+								Καλώς ορίσατε στο διαδραστικό ιστότοπο της Κέρκυρας!<br><br>
+							</b>
+							</p>
+
+							<p style="text-align: center;">
+								Εδώ μπορείτε να βρείτε διάφορες πληροφορίες για τα ξεχωριστά μέρη του νησιού και να ανακαλύψετε την ομορφιά του μέσω του ψηφιακού κόσμου.
+								<br><br>
+							</p>
+						</div>
+
+						<div class="ToggleButton" id="InfoToggle1" style="user-select: none;">Απόκρυψη παραγράφων εξήγησης πλοήγησης ⮟</div>
+
+						<div class="BasicTEXT">
+							<p>
+								<!-- I decided to make a list here / the id's are for the show/hide buttons -->
+								<ul id="ul1" style="text-align: justify;">
+									<li>Θα ήταν καλύτερο να ξεκινούσατε την περιήγηση σας από αυτήν την σελίδα και το διαδραστικό της βίντεο! Όμως υπάρχουν και τα παρακάτω:</li>
+									<br>
+									<li>Επισκεφθείτε την “γκαλερί” για να δείτε πληροφορίες για διάφορα μέρη και μνημεία του νησιού, πλούσιο φωτογραφικό υλικό καθώς και τα μουσικά κομμάτια του διαδραστικού βίντεο.</li>
+									<br>
+									<li>Ενδυναμώνοντας την δυνατή σύνδεση του νησιού με την μουσική, επισκεφθείτε την σελίδα “πιάνο” για να δοκιμάσετε το διαδραστικό πιάνο/κιθάρα και να κάνετε τα πρώτα σας βήματα στην μουσική, παρέα με την εικονική μας χαρακτήρα!</li>
+									<br>
+									<li>Επισκεφθείτε τα “έξτρα”  για επιπλέον mini-game, τραγούδια που μπορείτε να δοκιμάσετε στη σελίδα του πιάνου/κιθάρας, αλλά και μερικές special φωτογραφίες!</li>
+									<br>
+									<li>Τέλος για περισσότερες πληροφορίες για αυτήν τη δημιουργία και τον δημιουργό της επισκεφθείτε την επιλογή “σχετικά” του μενού.</li>
+									<br>
+									<p style="font-size: 32px; text-align: center;">
+										Ίσως μετά από όλα όσα προσφέρει ο ιστότοπος να αποφασίσετε να το επισκεφτείτε οι ίδιοι!
+									</p>
+								</ul>
+							</p>
+
+							<p id="SubTEXT" style="background:#ff90cd; border-radius: 80%; user-select: none;">
+								Interactive Video - Διαδραστικό Βίντεο
+							</p>
+						</div>
+
+						<div class="YTVideo">
+						
+							<!-- if the embed doesnt work and the video doesnt show up in the page, its because h5p servers are down and limit my embed usage/ability so the server can handle their customers/new visitors -->
+							<iframe src="https://h5p.org/h5p/embed/1236958" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+							
+							<!-- OLD EMBED
+							<iframe src="https://interactivecorfu.h5p.com/content/1291514320306250527/embed" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+							-->
+							
+							<!-- The h5p script for dynamically resizing the video and its interactive content. -->
+							<script src="https://interactivecorfu.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+							
+						</div>
+						
+						<div class="BasicTEXT">
+							<p>
+								Περιπλανηθείτε στο μαγευτικό νησί της Κέρκυρας και ανακαλύψετε την κρυφή ομορφιά του καθώς αποφασίζετε να βοηθήσετε την εικονική μας χαρακτήρα μετά από την αναπάντεχη συνάντηση σας, προσπαθώντας να βρει αυτό που έχει χάσει...
+								<br>
+							</p>
+						</div>
+
+						<div class="ToggleButton" id="InfoToggle2" style="user-select: none;">Απόκρυψη παραγράφων εξήγησης διαδραστικού βίντεο ⮟</div>
+
+						<div class="BasicTEXT">
+							<p>
+								<ul id="ul2" style="text-align: justify;">
+									<li>Δείτε το βίντεο και πάρτε αποφάσεις όποτε αυτό σας ζητείτε για να αλλάξετε την πλοκή της ιστορίας! Η επιλογές σας έχουν αντίκτυπο!</li>
+									<li>Απαντήστε προσεκτικά σε τυχών κουίζ που εμφανιστούν.</li>
+									<li>Μάθετε περισσότερα για την ιστορία του νησιού και τα αξιοθέατα, και δείτε εικόνες περνώντας τον κέρσορα σας πάνω από τα διαδραστικά σημεία!</li>
+									<li>Ακολουθήστε της οδηγίες στην οθόνη σε περίπτωση που χρειαστεί να παίξετε κάποιο mini-game της σελίδας όπως το διαδραστικό πιάνο!</li>
+									<li>Μην ξεχνάτε ότι μπορείτε να κάνετε παύση το βίντεο, να αλλάξετε την ταχύτητα αναπαραγωγής, την ανάλυση καθώς και να το βάλετε σε λειτουργία πλήρης οθόνης. Ωστόσο δεν μπορείτε να μετακινηθείτε ελεύθερα σε οπουδήποτε σημείο του βίντεο.</li>
+									<br>
+									<br>
+								</ul>
+							</p>
+							<!-- I started using single line css a lot -->
+							<p style="font-size: 32px; margin-top: 4%; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: underline;">
+								Ελπίζω να έχετε μία ευχάριστη διαδρομή!
+							</p>
+						</div>
+
+						
+
+						<div class="fixed-bottom">
+							<!-- Yes "i am" SakuraSoft its my team name / brand -->
+							<div class="CreatorText">
+								Dimitris Kostadimas 2021
+							</div>
+						</div>
+
+						<!-- Added a footer for the scroll on top button to appear on the bottom of the page. -->
+						<footer>
+							<img id="ScrlTopBtn" src="ReturnOnTopIcon.png" width="50px" style="margin: 1%; margin-left: 2%; opacity: 0.8; position: fixed; bottom: 1%; left: 2%; cursor: pointer;">
+						</footer>
+
+					</div>
+				</div>
+			</div>
+	
+</div>
+ </body>
+ </html>

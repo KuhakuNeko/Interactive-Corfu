@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Πλατεία Σπιανάδα</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../LightboxOpenCode/css/lightbox.min.css">
+	<script src="../LightboxOpenCode/js/lightbox-plus-jquery.min.js"></script>
+	<script src="../GalleryScriptButton.js" defer></script>
+	<script src="../GalleryScript.js" defer></script>
+	<link rel = "icon" href = "../../Logo.png" type = "image/x-icon">
+	<link rel="stylesheet" href="../Pictures.css">
+  </head>
+  <body>
+  <div id="main">
+		
+			<div class="container">
+				<div class="row">
+					
+					<!-- Reference to the main page and the logo with the text -->
+					<div>
+						<a href="../../index.html"><img id="logo"  style="float:left" src="../../Logo.png" width="80" height="80"></a>
+						<a href="../../index.html" id="name" style="float:left">Interactive Walk at Corfu Island</a>
+					</div>
+					
+					<div class="col-xl-12">
+
+						<!-- The top menu links that remain stay the same -->
+						<div id="TEXT" class="float-left">
+
+							<div class="links">
+								<a class="hover-underline-animation" id="Gallery" href="../Gallery.html" style="text-decoration: none;">Gallery</a>
+								<a class="hover-underline-animation" id="MusicPlayingGame" href="../../MusicPlayingGame/MusicPlayingGame.html" style="text-decoration: none;">Piano</a>
+								<a class="hover-underline-animation" id="Extra" href="../../Extra/Extra.html" style="text-decoration: none;">Extras</a>
+								<a class="hover-underline-animation" id="About" href="../../About/About.html" style="text-decoration: none;">About</a>
+							</div>
+							
+							<!-- The right and left image in case screen gets too big -->
+							<div class="left-image"></div>
+							<div class="right-image"></div>
+
+						</div>
+						
+						<!-- The picture with the corresponding description and the modal used for the zoom in -->
+						<div>
+							<img id="picture" src="spianada.jpg" width="1080px">
+							<p id="title">Πλατεία Σπιανάδα</p>
+							<p id="desc">
+								Η Πλατεία Σπιανάδα ή οποία είναι πόλη κοντά στο λιστών και την Ιόνιο ακαδημία αποτελεί βασική πλατεία του νησιού της Κέρκυρας αλλά και ολόκληρης της Ελλάδας καθώς είναι η μεγαλύτερη σε μέγεθος πλατεία της. Η λέξη “Σπιανάδα” είναι επίσης ελβετικής καταγωγής που κυριολεκτικά σημαίνει ανοικτή επίπεδη περιοχή. <br>
+								<br>
+								Στην πλατεία μπορούν να βρεθούν πολλά μνημεία και αξιοθέατα όπως το σιντριβάνι, και τα ιστορικά αγάλματα και πλάκες. Πέρα  από τα προαναφέρονται εκεί βρίσκετε και η γνωστή Ροτόντα η οποία χτίστηκε το 1821. Είναι γνωστή και ως Περιστύλιο του Μαίτλαντ καθώς κατασκευάστηκε προς τιμή του Βρετανού στρατιωτικού Θωμά Μαίτλαντ. Η ομορφιά και το μέγεθος της πλατείας προσελκύει πάντοτε όλους τους ντόπιους και τους τουρίστες να την επισκεφτούν και να την απολαύσουν. <br>
+								<br>
+							</p>
+						</div>
+
+						<div style="margin-top: 5%;">
+							<a class="GalleryImageLink" href="spianada2.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="spianada2.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="spianada3.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="spianada3.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="spianada4.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="spianada4.jpg"/>
+							</a>
+						</div>
+
+						<div id="myModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img"> 
+						</div>
+						
+						<div class="fixed-bottom">
+							<!-- Yes "i am" SakuraSoft its my team name / brand -->
+							<div class="CreatorText">
+								Dimitris Kostadimas 2021
+							</div>
+						</div>
+
+						<!-- Added a footer for the scroll on top button to appear on the bottom of the page. -->
+						<footer>
+							<img id="ScrlTopBtn" src="../../ReturnOnTopIcon.png" width="50px" style="margin: 1%; margin-left: 2%; opacity: 0.8; position: fixed; bottom: 1%; left: 2%; cursor: pointer;">
+						</footer>
+
+					</div>
+				</div>
+			</div>
+	
+	</div>
+  
+</body>
+</html>

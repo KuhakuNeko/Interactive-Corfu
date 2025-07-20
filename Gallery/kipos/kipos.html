@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Κήπος του Λαού</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../LightboxOpenCode/css/lightbox.min.css">
+	<script src="../LightboxOpenCode/js/lightbox-plus-jquery.min.js"></script>
+	<script src="../GalleryScriptButton.js" defer></script>
+	<script src="../GalleryScript.js" defer></script>
+	<link rel = "icon" href = "../../Logo.png" type = "image/x-icon">
+	<link rel="stylesheet" href="../Pictures.css">
+  </head>
+  <body>
+  <div id="main">
+		
+			<div class="container">
+				<div class="row">
+					<!-- Reference to the main page and the logo with the text -->
+					<div>
+						<a href="../../index.html"><img id="logo"  style="float:left" src="../../Logo.png" width="80" height="80"></a>
+						<a href="../../index.html" id="name" style="float:left">Interactive Walk at Corfu Island</a>
+					</div>
+					
+					<div class="col-xl-12">
+
+						<!-- The top menu links that remain stay the same -->
+						<div id="TEXT" class="float-left">
+
+							<div class="links">
+								<a class="hover-underline-animation" id="Gallery" href="../Gallery.html" style="text-decoration: none;">Gallery</a>
+								<a class="hover-underline-animation" id="MusicPlayingGame" href="../../MusicPlayingGame/MusicPlayingGame.html" style="text-decoration: none;">Piano</a>
+								<a class="hover-underline-animation" id="Extra" href="../../Extra/Extra.html" style="text-decoration: none;">Extras</a>
+								<a class="hover-underline-animation" id="About" href="../../About/About.html" style="text-decoration: none;">About</a>
+							</div>
+							
+							<!-- The right and left image in case screen gets too big -->
+							<div class="left-image"></div>
+							<div class="right-image"></div>
+
+						</div>
+						
+						<!-- The picture with the corresponding description and the modal used for the zoom in -->
+						<div>
+							<img id="picture" src="kipos.jpg" width="1080px">
+							<p id="title">Κήπος του Λαού</p>
+							<p id="desc">
+								Κήπος του λαού είναι η ονομασία που έχει δοθεί πλέων στους πρώην βασιλικούς κήπους. Καθώς αναφερόμαστε σε βασιλικούς κήπους είναι ξεκάθαρο πως ο κήπος του λαού απέχει μόλις μερικά μέτρα από τα παλαιά ανάκτορα. <br>
+								<br>
+								Ο κήπος ουσιαστικά είναι ένα πάρκο με πολύ πράσινο και εξαιρετικά προσεγμένες δημιουργίες. Ο κήπος έχει θέα προς την θάλασσα και διαθέτει παιδική χαρά. Στον κήπο βρίσκονται αρχαία καθίσματα και κτίσματα αλλά και αγάλματα και προτομές ιστορικών προσώπων. Επιπλέων τα σιντριβάνια στον ξεχωριστό και ζωηρό αυτό κήπο κάνουν την βασιλική του ταυτότητα ακόμα πιο εμφανή. <br>
+								<br>
+								Απέναντι από τον κήπο φαίνετε το παλαιό φρούριο ενώ στην έξοδο του βρίσκετε και η Παναγία Μανδρακίνα, μια μικρή εκκλησία που ξεχωρίζει και κοσμεί την περιοχή.
+							</p>
+						</div>
+
+						<div style="margin-top: 5%;">
+							<a class="GalleryImageLink" href="kipos2.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="kipos2.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="kipos3.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="kipos3.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="kipos4.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="kipos4.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="kipos5.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="kipos5.jpg"/>
+							</a>
+							<!-- added a div with float left to fix some alignment issues. -->
+							<div style="float: left;">
+								<a class="GalleryImageLink" href="kipos6.jpg" data-lightbox="SelectedGallery" data-title="" >
+									<img id="MoreGalleryImage" class="GalleryImage" src="kipos6.jpg" />
+								</a>
+								<a class="GalleryImageLink" href="kipos7.jpg" data-lightbox="SelectedGallery" data-title="">
+									<img id="MoreGalleryImage" class="GalleryImage" src="kipos7.jpg" />
+								</a>
+								<a class="GalleryImageLink" href="kipos8.jpg" data-lightbox="SelectedGallery" data-title="">
+									<img id="MoreGalleryImage" class="GalleryImage" src="kipos8.jpg"/>
+								</a>
+							</div>
+							
+						</div>
+						
+						<div id="myModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img"> 
+						</div>
+						
+						<div class="fixed-bottom">
+							<!-- Yes "i am" SakuraSoft its my team name / brand -->
+							<div class="CreatorText">
+								Dimitris Kostadimas 2021
+							</div>
+						</div>
+
+						<!-- Added a footer for the scroll on top button to appear on the bottom of the page. -->
+						<footer>
+							<img id="ScrlTopBtn" src="../../ReturnOnTopIcon.png" width="50px" style="margin: 1%; margin-left: 2%; opacity: 0.8; position: fixed; bottom: 1%; left: 2%; cursor: pointer;">
+						</footer>
+
+					</div>
+				</div>
+			</div>
+	
+	</div>
+  
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap and ajax stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Lightbox is a code i found on GitHub by https://github.com/lokesh/lightbox2 and its free with MIT license and open source. -->
+	<!-- It just helps with the zoom and next and previous buttons. Only for certain images that i choose. -->
+	<link rel="stylesheet" href="../Gallery/LightboxOpenCode/css/lightbox.min.css">
+	<script src="../Gallery/LightboxOpenCode/js/lightbox-plus-jquery.min.js"></script>
+	<!-- my JavaScript file! -->
+	<script src="ExtraScript.js" defer></script>
+	<!-- my css file! -->
+	<link rel="stylesheet" href="ExtraStyle.css">
+	<!-- My page icon! -->
+	<link rel = "icon" href = "../Logo.png" type = "image/x-icon">
+	<!-- My page title! -->
+	<title>Interactive Corfu - Extras</title>
+  </head>
+ <body>
+ <div id="main">
+
+			<div class="container">
+				<div class="row">
+					<!-- Reference to the main page and the logo with the text -->
+					<div>
+						<a href="../index.html"><img id="logo"  style="float:left" src="../Logo.png" width="80" height="80"></a>
+						<a href="../index.html" id="name" style="float:left">Interactive Walk at Corfu Island</a>
+					</div>
+					
+					<div class="col-xl-12">
+
+						<!-- The top menu links that remain stay the same -->
+						<div id="TEXT" class="float-left">
+
+							<div class="links">
+								<a class="hover-underline-animation" id="Gallery" href="../Gallery/Gallery.html" style="text-decoration: none;">Gallery</a>
+								<a class="hover-underline-animation" id="MusicPlayingGame" href="../MusicPlayingGame/MusicPlayingGame.html" style="text-decoration: none;">Piano</a>
+								<a id="Extra" style="color: gray; user-select: none; text-decoration: none;">Extras</a>
+								<a class="hover-underline-animation" id="About" href="../About/About.html" style="text-decoration: none;">About</a>
+							</div>
+							
+							<!-- The right and left image in case screen gets too big -->
+							<div class="left-image"></div>
+							<div class="right-image"></div>
+
+						</div>
+
+						<p id="SubTEXT">
+							<b>
+								EXTRAS!<br>
+							</b>
+						</p>
+
+						<div class="BasicTEXT">
+							<p style="text-align: center;">
+								Εδώ θα βρείτε επιπλέον ή αλλιώς "έξτρα" περιεχόμενο το οποίο δημιουργήθηκε για την ιστοσελίδα και είναι λίγο πιο "ελεύθερο". Ίσως να σας κεντρίσει κάπως το ενδιαφέρον!<br>
+								<br>
+							</p>
+						</div>
+
+						<!-- Mini Quiz and redirect to Eraser Mini-Game! -->
+						<div class="ToggleButton" id="InfoToggle1" style="user-select: none;">Απόκρυψη κουίζ παιχνιδιού κρυφού αντικιμένου ⮟</div>
+						
+						<!-- Happy Melody Sound! -->
+						<audio id="CongratulationsSound" src="Data/music_files/MsBoxCongrationSound.mp3"></audio>
+						<audio id="FailureSound" src="Data/music_files/FailureSound.mp3"></audio>
+
+						<div id="Extra1">
+							<p style="font-size: larger; text-align: center; margin-top: 2%; margin-bottom: 3%;">
+								Απαντήστε στο παρακάτω Κερκυραϊκό κουίζ για να ξεκλειδώσετε την σελίδα με την κρυφή πληροφορία!<br><br>
+								Ή απλώς δοκιμάστε το για να περάσετε την ώρα σας και να τεστάρετε τις γνώσεις σας για την Κέρκυρα!<br><br>
+								Πολλές από τις απαντήσεις θα τις βρείτε είτε στις πληροφορίες της γκαλερί είτε παίζοντας το διαδραστικό βίντεο.
+							</p>
+							<form style="font-size: 24px; margin: 1%; margin-bottom: 3%;">
+
+								<li class="question">Πώς ονομάζονται τα στενά δρομάκια της Κέρκυρας;</li>
+								<input class="Qanswer" type="radio" name="group1" value="wrong">Σοκάκια<br>
+								<input class="Qanswer" type="radio" name="group1" value="correct">Καντούνια<br>
+								<input class="Qanswer" type="radio" name="group1" value="wrong">Στενόδρομα<hr>
+						
+								<li class="question">Ποία είναι η μεγαλύτερη πλατεία της Ελλάδας</li>
+								<input class="Qanswer" type="radio" name="group2" value="wrong">Σύντάγματος<br>
+								<input class="Qanswer" type="radio" name="group2" value="wrong">Ζέρβα<br>
+								<input class="Qanswer" type="radio" name="group2" value="correct">Σπιανάδα<hr>
+						
+								<li class="question">Για ποιό πράγμα ξεχώριζε η Ιόνιος Ακαδημία;</li>
+								<input class="Qanswer" type="radio" name="group3" value="correct">Επειδή υπήρξε το πρώτο νεότερο ελληνικό πανεπιστήμιο<br>
+								<input class="Qanswer" type="radio" name="group3" value="wrong">Επειδή είναι ένα πολύ ψηλό κτίριο<br>
+								<input class="Qanswer" type="radio" name="group3" value="wrong" >Επειδή το κτίριό στο οποίο στεγάζετε έχει αντέξει στο χρόνο<hr>
+
+								<li class="question">Τι στεγάζεται πλέον εντός των παλαιών ανάκτορων των αγίων Μιχαήλ και Γεωργίου;</li>
+								<input class="Qanswer" type="radio" name="group4" value="correct">Στεγάζεται το ασιατικό μουσείο της Κέρκυρας<br>
+								<input class="Qanswer" type="radio" name="group4" value="wrong">Παραμένει απλός ένα παλάτι όπως όταν χτίστηκε το 1824<br>
+								<input class="Qanswer" type="radio" name="group4" value="wrong" >Είναι πλέον θέατρο και χώρος εκδηλώσεων.<hr>
+
+								<li class="question">Απο πού πείρε ή Κέρκυρα το ξενικό της όνομα "Corfu/Κόρφου";</li>
+								<input class="Qanswer" type="radio" name="group5" value="wrong">Επειδή βρίσκετε στην άκρη / κορυφή της Ελλάδας<br>
+								<input class="Qanswer" type="radio" name="group5" value="correct">Από τις δύο κορυφές του παλαιού φρουρίου που κοσμεί το νησί<br>
+								<input class="Qanswer" type="radio" name="group5" value="wrong" >Λόγο του ότι είναι ένα από τα κορυφαία νησιά<hr>
+						
+								<button id="FinishBtn" onclick="QuizChecker()" type="submit">Κλείδωμα / Τελική Επιλόγη!</button>
+								
+							</form>					
+						</div>
+
+						<!-- More Music Stuff -->
+						<div class="ToggleButton" id="InfoToggle2" style="user-select: none;">Εμφάνιση τραγουδίων για διαδραστικό πιάνο ⮝</div>
+
+						<div id="Extra2">
+								
+								<p style="font-size: larger; text-align: center; margin-top: 2%; margin-bottom: 5%;">
+									Δοκιμάστε να παίξετε τις παρακάτω νότες του κάθε τραγουδιού στο πιάνο αρχικά αργά και αν γνωρίζετε ήδη το τραγούδι σίγουρα θα πιάσετε το ρυθμό του και θα μπορείτε να το παίξετε στο διαδραστικό πιάνο μόνο με το πληκτρολόγιό σας!<br>
+									<br>
+									Δεν υπάρχει ανάγκη να γνωρίζετε νότες διότι το πιάνο τις γράφει ήδη πάνω. Φυσικά στο πιάνο μπορείτε να εμφανίσετε και τις αντίστοιχες νότες πληκτρολογίου αν προτιμάτε να παίξετε με το πληκτρολόγιο.<br>
+									<br>
+									Όταν οι νότες είναι διπλές ή γράφει για παράδειγμα x5 σημαίνει ότι πρέπει να πατήσετε την ίδια νότα 5 φορές με σχετικά γρήγορο ρυθμό. Οταν υπάρχει ο αριθμός 6 δίπλα από κάποια νότα σημαίνει ότι πρέπει να χρησιμοποιήσετε την επόμενη οκτάβα. Οι νότες αλλάζουν γραμμή αν αφορούν επόμενη πρόταση στους στοίχους του τραγουδιού.
+								</p>
+
+								<p class="SongText">
+								Η Ρούγα / Κερκυραϊκός - Παραδοσικό Τραγούδι της Κέρκυρας
+								</p>
+								<p class="TextNotes">
+								C - D - Ex5 - F - G - F - E - D - CC
+								</p>
+
+								<hr>
+
+								<p class="SongText">
+								Κέρκυρα - Ρένα Βλαχοπούλου
+								</p>
+								<p class="TextNotes">
+								F - FF - F - FF<br>
+								G - F - F - E - D - C - D - E<br>
+								C - DD - E - F - G - GG<br>
+								F - G - F - E - D - C - C<br>
+								</p>
+
+								<hr>
+
+								<p class="SongText">
+								Θυμωμένος μου ήρθες απόψε - Παραδοσικό Τραγούδι της Κέρκυρας
+								</p>
+								<p class="TextNotes">
+								E - E - A - E - E - A - B - A - E<br>
+								A - E - A - B - C#6 - B - B - A - B<br>
+								E - E - A - A - E - A - A - C#6 - B - B<br>
+								A - C#6 - Β - Ε - A - G# - A - B - A
+								</p>
+						</div>
+
+						<div class="ToggleButton" id="InfoToggle3" style="user-select: none;">Εμφάνιση έξτρα αναμνηστικών εικόνων ⮝</div>
+						
+						<div id="Extra3" style="margin-top: 2%;">
+							<!-- The "a" is for referencing the lightbox(OpenSourceImageZoomingLibrary) script for zooming on our beautiful pictures! -->
+							<a class="ImageExtrasLink" href="Data/Images/Special1.jpg" data-lightbox="SpecialImages" data-title="">
+								<img id="ExtraImageLeft" class="ExtrasImage" src="Data/Images/Special1.jpg"/>
+							</a>
+
+							<a class="ImageExtrasLink" href="Data/Images/Special2.jpg" data-lightbox="SpecialImages" data-title="">
+								<img id="ExtraImageRight" class="ExtrasImage" src="Data/Images/Special2.jpg"/>
+							</a>
+
+							<a class="ImageExtrasLink" href="Data/Images/Special3.jpg" data-lightbox="SpecialImages" data-title="">
+								<img id="ExtraImageLeft" class="ExtrasImage" src="Data/Images/Special3.jpg"/>
+							</a>
+
+							<a class="ImageExtrasLink" href="Data/Images/Special4.jpg" data-lightbox="SpecialImages" data-title="">
+								<img id="ExtraImageRight" class="ExtrasImage" src="Data/Images/Special4.jpg"/>
+							</a>
+
+						</div>
+
+						<div class="fixed-bottom">
+							<!-- Yes "i am" SakuraSoft its my team name / brand -->
+							<div class="CreatorText">
+								Dimitris Kostadimas 2021
+							</div>
+						</div>
+
+						<!-- Added a footer for the scroll on top button to appear on the bottom of the page. -->
+						<footer>
+							<img id="ScrlTopBtn" src="../ReturnOnTopIcon.png" width="50px" style="margin: 1%; margin-left: 2%; opacity: 0.8; position: fixed; bottom: 1%; left: 2%; cursor: pointer;">
+						</footer>
+
+					</div>
+				</div>
+			</div>
+	
+</div>
+</body>
+</html>

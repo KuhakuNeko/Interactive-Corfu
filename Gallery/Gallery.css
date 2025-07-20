@@ -1,0 +1,224 @@
+body {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	background-color:#81d1ff;	
+	color:#000000;
+}
+
+/*Logo on top*/
+#logo{
+	left: 30%;
+}
+
+/* Site name next to the logo */
+#name{
+	position: relative;
+	top: -20px;
+	margin:20px;
+	font-size: 50px;
+	font-family: Times New Roman;
+}
+
+#name, #name:link, #name:visited {
+	color: black; 
+	text-decoration: none;
+}
+
+
+/* Side images */
+.left-image{
+    left: 0;
+	background-position: center left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-image: url(../left.jpg);
+}
+
+.right-image{
+    right: 0;
+	background-position: center right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-image: url(../right.jpg);
+}
+
+/* Methods to disable the right and left image when the screen is too small */
+@media screen and (max-width: 1800px) {
+	.right-image{
+		display: none;
+	}
+}
+  
+@media screen and (max-width: 1890px) {
+	.left-image{
+		display: none;
+	}
+}
+
+/* Top menu things size */
+#TEXT{
+	font-size:30px;
+}
+
+.links{
+	font: Georgia;
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.links { 
+		font-size: 30px;
+		margin-top: 25px;	
+	}
+}
+
+/* keeps the menu things white. from whenever you accesed them from */
+#About, #About:link, #About:visited {
+	color: white; 
+}
+
+#About{
+	margin: 10px;
+}
+
+#Extra, #Extra:link, #Extra:visited {
+	color: white; 
+}
+
+#Extra{
+	margin: 10px;
+}
+
+#Gallery, #Gallery:link, #Gallery:visited {
+	color: white; 
+}
+
+#Gallery{
+	margin: 10px;
+}
+
+#MusicPlayingGame, #MusicPlayingGame:link, #MusicPlayingGame:visited {
+	color: white; 
+}
+
+#MusicPlayingGame{
+	margin: 10px;
+}
+
+/* Banner */
+.banner{
+	width:100%;
+	max-width:100%;
+	height:auto;
+	border: 2px solid #ff83bd;
+	margin-top: 5%;
+}
+
+/* Title */
+.title{
+	position: relative;
+	margin-top:50px;
+	margin-bottom:30px;
+	text-align: left;
+	font-size:40px;
+}
+
+/* Borders and stuff on the gallery tiles*/
+.gallery {
+	border-radius:8%;
+	border: 3px solid #ff88c9;
+	background-color: #6adaff;
+	font-size:15px;
+	margin:20px;
+}
+
+.gallery:hover {
+	border: 3px solid #00a3da;
+	background-color:rgb(142, 213, 255);
+	color:#ffffff;
+}
+
+.gallery img {
+	border-radius:8%;
+	width: 100%;
+	object-fit: cover;
+	border-bottom: 2px solid #ff88c9;
+}
+
+.gallery img:hover {
+	border-bottom: 2px solid #0099cc;
+}
+
+.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+	width: 50%;
+	margin: 8px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* Found this cool animation trick from here:
+https://www.30secondsofcode.org/css/s/hover-underline-animation
+kudos to them for the animation code.
+*/
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #f352ab;
+}
+
+.hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #f352ab;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/* Bottom watermark text */
+.CreatorText {
+	color: rgb(255, 255, 255);
+	/* Multiple shadowing to make it more visible to the bare eye */
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	user-select: none;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	z-index: 39;
+}

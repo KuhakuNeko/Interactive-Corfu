@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Πινακοθήκη</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../LightboxOpenCode/css/lightbox.min.css">
+	<script src="../LightboxOpenCode/js/lightbox-plus-jquery.min.js"></script>
+	<script src="../GalleryScriptButton.js" defer></script>
+	<script src="../GalleryScript.js" defer></script>
+	<link rel = "icon" href = "../../Logo.png" type = "image/x-icon">
+	<link rel="stylesheet" href="../Pictures.css">
+  </head>
+  <body>
+  <div id="main">
+		
+			<div class="container">
+				<div class="row">
+
+					<!-- Reference to the main page and the logo with the text -->
+					<div>
+						<a href="../../index.html"><img id="logo"  style="float:left" src="../../Logo.png" width="80" height="80"></a>
+						<a href="../../index.html" id="name" style="float:left">Interactive Walk at Corfu Island</a>
+					</div>
+					
+					<div class="col-xl-12">
+
+						<!-- The top menu links that remain stay the same -->
+						<div id="TEXT" class="float-left">
+
+							<div class="links">
+								<a class="hover-underline-animation" id="Gallery" href="../Gallery.html" style="text-decoration: none;">Gallery</a>
+								<a class="hover-underline-animation" id="MusicPlayingGame" href="../../MusicPlayingGame/MusicPlayingGame.html" style="text-decoration: none;">Piano</a>
+								<a class="hover-underline-animation" id="Extra" href="../../Extra/Extra.html" style="text-decoration: none;">Extras</a>
+								<a class="hover-underline-animation" id="About" href="../../About/About.html" style="text-decoration: none;">About</a>
+							</div>
+							
+							<!-- The right and left image in case screen gets too big -->
+							<div class="left-image"></div>
+							<div class="right-image"></div>
+
+						</div>
+						
+						<!-- The picture with the corresponding description and the modal used for the zoom in -->
+						<div>
+							<img id="picture" src="pinakothiki.jpg" width="1080px">
+							<p id="title">Πινακοθήκη</p>
+							<p id="desc">
+								Η Πινακοθήκη της Κέρκυρας ιδρύθηκε το 1991 και στεγάζετε στα παλαιά ανάκτορα. Η πινακοθήκη δεν περιορίζετε μόνο σε έργα ζωγραφικής αλλά μέσα από πληθώρα περιοδικών εκθέσεων εκθέτει και έργα καλλιτεχνικής φωτογραφίας και γλυπτικής αλλά και έργα σύγχρονων καλλιτεχνών διαφόρων φύσεων. <br>
+								<br>
+								Φυσικά τον καιρό που δεν διεξάγετε κάποια περιοδική έκθεση υπάρχει πάντα η μόνιμη έκθεση ζωγραφικής που περιλαμβάνει αντιπροσωπευτικά έργα- σταθμούς της τέχνης στην Κέρκυρα από τον 16ο έως το τέλος του 20ου αιώνα. Η πινακοθήκη της Κέρκυρας συχνά διεξάγει δραστηριότητές τους στον τομέα των εικαστικών τεχνών και συνεργάζεται με το Ιονιο πανεπιστήμιο και με πολλές άλλες πινακοθήκες για την προώθηση των σύγχρονων ροών της τέχνης. <br>
+								<br>
+								Η Δημοτική Πινακοθήκη Κερκυραίων ένα μέρος που σίγουρα πρέπει να επισκεφθείτε και να επεκτείνετε τον πνευματικό σας ορίζοντα με την εκλεπτυσμένη τέχνη των εκθέσεων της.
+							</p>
+						</div>
+						
+						<div style="margin-top: 5%;">
+							<a class="GalleryImageLink" href="pinakothiki2.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="pinakothiki2.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="pinakothiki3.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="pinakothiki3.jpg"/>
+							</a>
+							<a class="GalleryImageLink" href="pinakothiki4.jpg" data-lightbox="SelectedGallery" data-title="">
+								<img id="MoreGalleryImage" class="GalleryImage" src="pinakothiki4.jpg"/>
+							</a>
+						</div>
+
+						<div id="myModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img"> 
+						</div>
+						
+						<div class="fixed-bottom">
+							<!-- Yes "i am" SakuraSoft its my team name / brand -->
+							<div class="CreatorText">
+								Dimitris Kostadimas 2021
+							</div>
+						</div>
+
+						<!-- Added a footer for the scroll on top button to appear on the bottom of the page. -->
+						<footer>
+							<img id="ScrlTopBtn" src="../../ReturnOnTopIcon.png" width="50px" style="margin: 1%; margin-left: 2%; opacity: 0.8; position: fixed; bottom: 1%; left: 2%; cursor: pointer;">
+						</footer>
+
+					</div>
+				</div>
+			</div>
+	
+	</div>
+  
+</body>
+</html>
