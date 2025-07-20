@@ -1,6 +1,6 @@
 # Interactive Corfu
 
-<img src="https://img.shields.io/badge/Artwork-Original-ff69b4"> <img src="https://img.shields.io/badge/User-Friendly-orange"> <img src="https://img.shields.io/badge/Website-Active-brightgreen"> <img src="https://img.shields.io/badge/Provider-GitHub Pages-white"> <img src="https://img.shields.io/badge/Version-1.0-blue"> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKuhakuNeko%2FInteractive-Corfu&count_bg=%23FF5110&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false)](https://hits.seeyoufarm.com) <img src="https://img.shields.io/badge/License-Copyright-cyan">
+<img src="https://img.shields.io/badge/Artwork-Original-ff69b4"> <img src="https://img.shields.io/badge/User-Friendly-orange"> <img src="https://img.shields.io/badge/Website-Active-brightgreen"> <img src="https://img.shields.io/badge/Provider-GitHub Pages-white"> <img src="https://img.shields.io/badge/Version-1.0-blue"> ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FKuhakuNeko%2FInteractive-Corfu&label=Hits&color=%23d63384&message=&style=flat&tz=UTC) <img src="https://img.shields.io/badge/License-Copyright-cyan">
 
 ## **Ο διαδραστικός ιστότοπος της Κέρκυρας!**
 
